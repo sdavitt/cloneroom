@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+   
+    grid-template-areas:
+    "contentlocation contentlocation navlocation"
+    "contentlocation contentlocation ."
+    "contentlocation contentlocation logolocation";
+    
+    /* optionally specify height and width
+    to cause grid to occupy more space than its content demands*/
+    height: 50%;
+    width: 80%;
+}
+
+.content {
+    grid-area: contentlocation;
+}
+
+.nav {
+    grid-area: navlocation;
+}
+
+.logo {
+    grid-area: logolocation;
+}
